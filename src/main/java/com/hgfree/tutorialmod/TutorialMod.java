@@ -1,5 +1,6 @@
 package com.hgfree.tutorialmod;
 
+import com.hgfree.tutorialmod.item.ModItemGroups;
 import com.hgfree.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -12,7 +13,7 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-		ModItems.registerModIterms();
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
 	}
 }
