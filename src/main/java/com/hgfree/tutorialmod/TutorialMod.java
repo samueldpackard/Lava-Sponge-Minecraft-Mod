@@ -15,6 +15,7 @@ public class TutorialMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		//added this random comment just to see how github works.
+		//again lol
 		LOGGER.info("Hello Fabric world!");
 	}
 }
