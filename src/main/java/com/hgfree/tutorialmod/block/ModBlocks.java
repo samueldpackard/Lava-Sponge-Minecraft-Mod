@@ -20,6 +20,9 @@ public class ModBlocks {
     public static final Block RAW_RUBY_BLOCK = registerBlock("raw_ruby_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
+    public static final Block LAVA_SPONGE = registerBlock("lava_sponge",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, name), block);
