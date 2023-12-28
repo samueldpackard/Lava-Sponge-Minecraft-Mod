@@ -18,7 +18,6 @@ public class ModItems {
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);
         entries.add(RAW_RUBY);
-//        entries.add(LAVA_SPONGE);
 
     }
 

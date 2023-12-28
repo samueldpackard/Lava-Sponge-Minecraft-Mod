@@ -4,6 +4,7 @@
   "block.tutorialmod.ruby_block": "Block of Ruby",
   "block.tutorialmod.raw_ruby_block": "Block of Raw Ruby",
   "block.tutorialmod.lava_sponge": "Lava Sponge",
+  "block.tutorialmod.wet_lava_sponge": "Wet Lava Sponge",
 
   "itemgroup.ruby": "Ruby Tutorial Group"
 }

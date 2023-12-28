@@ -22,7 +22,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RAW_RUBY_BLOCK);
 
                         entries.add(ModBlocks.LAVA_SPONGE);
-
+                        entries.add(ModBlocks.WET_LAVA_SPONGE);
 
 
                     }).build());

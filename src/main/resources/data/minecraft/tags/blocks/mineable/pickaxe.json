@@ -3,6 +3,7 @@
   "values": [
     "tutorialmod:ruby_block",
     "tutorialmod:raw_ruby_block",
-    "tutorialmod:lava_sponge"
+    "tutorialmod:lava_sponge",
+    "tutorialmod:wet_lava_sponge"
   ]
 }
