@@ -5,7 +5,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "condition": "minecraft:survive_explosion"
+          "condition": "minecraft:survives_explosion"
         }
       ],
       "entries": [
