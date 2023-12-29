@@ -22,20 +22,26 @@ public class LavaSpongeBlock extends SpongeBlock {
         }
     }
 
-    private boolean absorbLavaAround(World world, BlockPos pos) {
+    private boolean absorbLavaAround(World world, BlockPos center) {
         boolean absorbedAnyLava = false;
-        for (int dx = -1; dx <= 1; dx++) {
-            for (int dy = -1; dy <= 1; dy++) {
-                for (int dz = -1; dz <= 1; dz++) {
-                    BlockPos newPos = pos.add(dx, dy, dz);
-                    BlockState blockState = world.getBlockState(newPos);
-                    if (blockState.getBlock() == Blocks.LAVA) {
-                        world.setBlockState(newPos, Blocks.AIR.getDefaultState(), 3);
-                        absorbedAnyLava = true;
+        int radius = 7; // New radius
+        int radiusSquared = radius * radius;
+
+        for (int dx = -radius; dx <= radius; dx++) {
+            for (int dy = -radius; dy <= radius; dy++) {
+                for (int dz = -radius; dz <= radius; dz++) {
+                    if (dx * dx + dy * dy + dz * dz <= radiusSquared) { // Check if within spherical radius
+                        BlockPos currentPos = center.add(dx, dy, dz);
+                        if (world.getBlockState(currentPos).getBlock() == Blocks.LAVA) {
+                            world.setBlockState(currentPos, Blocks.AIR.getDefaultState(), 3); // Replace lava with air
+                            absorbedAnyLava = true;
+                        }
                     }
                 }
             }
         }
+
         return absorbedAnyLava;
     }
+
 }

@@ -20,6 +20,6 @@ public class TutorialMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		// Register Wet Lava Sponge as a fuel that burns for 800 ticks (40 seconds)
-		FuelRegistry.INSTANCE.add(ModBlocks.WET_LAVA_SPONGE, 800);
+//		FuelRegistry.INSTANCE.add(ModBlocks.WET_LAVA_SPONGE, 800);
 	}
 }
