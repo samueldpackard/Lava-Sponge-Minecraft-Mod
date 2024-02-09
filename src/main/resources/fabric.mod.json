@@ -3,9 +3,9 @@
 	"id": "tutorialmod",
 	"version": "${version}",
 	"name": "TutorialMod",
-	"description": "This is a tutorial mod made by HG Frizzle",
+	"description": "This is a Lava Sponge mod made by Samuel Packard",
 	"authors": [
-		"HG Frizzle"
+		"Samuel Packard"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
